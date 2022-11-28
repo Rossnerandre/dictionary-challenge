@@ -1,10 +1,10 @@
 import ThemeProvider from './theme';
-import {Typography} from "@mui/material";
+import Router from "./routes";
 
 export default function App() {
   return (
     <ThemeProvider>
-      <Typography variant="h3">Dictionary Challenge</Typography>
+      <Router/>
     </ThemeProvider>
   );
 }
