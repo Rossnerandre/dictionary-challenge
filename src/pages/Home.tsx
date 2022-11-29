@@ -1,6 +1,7 @@
 import {Container} from "@mui/material";
 import Page from '../components/Page';
 import {styled} from '@mui/material/styles';
+import InfiniteWords from "../components/InfiniteWords";
 
 const RootStyle = styled('div')(({theme}) => ({
   paddingTop: theme.spacing(8),
@@ -10,10 +11,13 @@ const RootStyle = styled('div')(({theme}) => ({
 }));
 
 export default function HomePage() {
+
   return (
     <Page title="Home Page">
       <RootStyle>
-        <Container >
+        <Container>
+
+          <InfiniteWords/>
         </Container>
       </RootStyle>
     </Page>
